@@ -9,51 +9,78 @@ type Blog = {
 
 const blogs: Blog[] = [
   {
-    title: "blog1",
+    title: "Blog1",
     date: "date",
-    description: "description",
-    image: "",
+    description: `A blog post is a single article or piece of content published on a blog, which is an
+     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of 
+     topics and include text, images, and videos. They are typically displayed in reverse chronological order
+      on the blog, meaning the most recent post appears first.`,
+    image: "sky.jpg",
     imageAlt: "imageAlt",
     slug: "blog1",
   },
   {
-    title: "blog2",
+    title: "Blog2",
     date: "date",
-    description: "description",
-    image: "",
+    description: `A blog post is a single article or piece of content published on a blog, which is an
+     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of 
+     topics and include text, images, and videos. They are typically displayed in reverse chronological order
+      on the blog, meaning the most recent post appears first.`,
+    image: "sky.jpg",
     imageAlt: "imageAlt",
     slug: "blog2",
   },
   {
-    title: "blog3",
+    title: "Blog3",
     date: "date",
-    description: "description",
-    image: "",
+    description: `A blog post is a single article or piece of content published on a blog, which is an
+     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of 
+     topics and include text, images, and videos. They are typically displayed in reverse chronological order
+      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an
+     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of 
+     topics and include text, images, and videos. They are typically displayed in reverse chronological order
+      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an
+     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of 
+     topics and include text, images, and videos. They are typically displayed in reverse chronological order
+      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an
+     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of 
+     topics and include text, images, and videos. They are typically displayed in reverse chronological order
+      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an
+     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of 
+     topics and include text, images, and videos. They are typically displayed in reverse chronological order
+      on the blog, meaning the most recent post appears first.`,
+    image: "sky.jpg",
     imageAlt: "imageAlt",
     slug: "blog3",
-  }
+  },
 ];
 
 const blogContainer = document.getElementById("blog-container");
-appendBlogs()
+appendBlogs();
 
 function appendBlogs() {
-    blogs.forEach((blog) => {
-        const blogImage = document.createElement("img");
-        const blogPostContainer = document.createElement("div")
-        const blogHeader = document.createElement("h1")
-        const blogDescription = document.createElement("p")
-        const blogSlug = document.createElement("a")
-        blogHeader.innerHTML = blog.title
-        blogDescription.innerHTML = blog.description
-        blogImage.src = blog.image;
-        blogImage.alt = blog.imageAlt;
-        blogSlug.href = "./blogs/" + blog.slug + ".html"
-        blogSlug.innerHTML = "Learn More"
-        blogPostContainer.appendChild(blogHeader)
-        blogPostContainer.appendChild(blogImage)
-        blogPostContainer.appendChild(blogDescription)
-        blogPostContainer.appendChild(blogSlug)
-        blogContainer?.append(blogPostContainer)
-    });
+  blogs.forEach((blog) => {
+    const blogImage = document.createElement("img");
+    const blogPostContainer = document.createElement("div");
+    const blogPostContentContainer = document.createElement("div");
+    const blogPostDescriptionContainer = document.createElement("div");
+    blogPostContentContainer.className = "blog-post-content-container";
+    const blogHeader = document.createElement("h1");
+    const blogDescription = document.createElement("p");
+    blogDescription.className = "blog-description"
+    const blogSlug = document.createElement("a");
+    blogHeader.innerHTML = blog.title;
+    blogDescription.innerHTML = blog.description;
+    blogImage.src = blog.image;
+    blogImage.alt = blog.imageAlt;
+    blogSlug.href = "./blogs/" + blog.slug + ".html";
+    blogSlug.innerHTML = "Learn More";
+    blogPostContainer.appendChild(blogHeader);
+    blogPostContentContainer.appendChild(blogImage);
+    blogPostDescriptionContainer.appendChild(blogDescription)
+    blogPostContentContainer.appendChild(blogPostDescriptionContainer);
+    blogPostContainer.appendChild(blogPostContentContainer);
+    blogPostContainer.appendChild(blogSlug);
+    blogContainer?.append(blogPostContainer);
+  });
 }
