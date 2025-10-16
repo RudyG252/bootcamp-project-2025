@@ -21,7 +21,7 @@ var blogs = [
         description: "This is just a small entry for my first blog post, in which I will brainstorm and hopefully\n     find ideas for future blog posts.",
         image: "sky.jpg",
         imageAlt: "imageAlt",
-        slug: "blog3",
+        slug: "First_Blog",
     },
 ];
 var blogContainer = document.getElementById("blog-container");

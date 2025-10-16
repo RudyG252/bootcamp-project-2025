@@ -37,7 +37,7 @@ const blogs: Blog[] = [
      find ideas for future blog posts.`,
     image: "sky.jpg",
     imageAlt: "imageAlt",
-    slug: "blog3",
+    slug: "First_Blog",
   },
 ];
 
