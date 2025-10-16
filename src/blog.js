@@ -1,6 +1,6 @@
 var blogs = [
     {
-        title: "Blog1",
+        title: "Blog3",
         date: "date",
         description: "A blog post is a single article or piece of content published on a blog, which is an\n     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of \n     topics and include text, images, and videos. They are typically displayed in reverse chronological order\n      on the blog, meaning the most recent post appears first.",
         image: "sky.jpg",
@@ -16,9 +16,9 @@ var blogs = [
         slug: "blog2",
     },
     {
-        title: "Blog3",
-        date: "date",
-        description: "A blog post is a single article or piece of content published on a blog, which is an\n     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of \n     topics and include text, images, and videos. They are typically displayed in reverse chronological order\n      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an\n     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of \n     topics and include text, images, and videos. They are typically displayed in reverse chronological order\n      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an\n     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of \n     topics and include text, images, and videos. They are typically displayed in reverse chronological order\n      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an\n     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of \n     topics and include text, images, and videos. They are typically displayed in reverse chronological order\n      on the blog, meaning the most recent post appears first.A blog post is a single article or piece of content published on a blog, which is an\n     online platform for sharing information, thoughts, or ideas. These posts can cover a variety of \n     topics and include text, images, and videos. They are typically displayed in reverse chronological order\n      on the blog, meaning the most recent post appears first.",
+        title: "My First Blog Entry",
+        date: "10/16/25",
+        description: "This is just a small entry for my first blog post, in which I will brainstorm and hopefully\n     find ideas for future blog posts.",
         image: "sky.jpg",
         imageAlt: "imageAlt",
         slug: "blog3",

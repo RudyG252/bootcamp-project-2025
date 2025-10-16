@@ -440,8 +440,12 @@ form {
 }
 
 .blog-container h1 {
-  font-size: 40px;
-  margin-top: 10px;
+  font-size: 35px;
+  margin-top: 0px;
+  max-width: 210px;
+  font-weight:bold;
+  font-family: 'Playfair Display', serif;
+  color: #1e1e2e;
 }
 
 .blog-post-container img {
@@ -460,6 +464,8 @@ form {
   height: 100%;
   align-items: center;
   margin-right: 15px;
+  max-height: 280px;
+  margin-bottom: 30px;
 }
 
 .blog-post-content-container > div {
