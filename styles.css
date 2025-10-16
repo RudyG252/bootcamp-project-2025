@@ -394,33 +394,9 @@ form {
   transition: transform(0.2s);
 }
 
-.blog-container > div a {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-family: monospace;
-  color: #a48aff;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.3s ease;
-  padding: 4px 6px;
-  border-radius: 6px;
-  margin-top: 5px;
-}
 
-.blog-container > div a:hover {
-  color: #ffffff;
-  background-color: rgba(164, 138, 255, 0.15);
-  box-shadow: 0 0 10px rgba(164, 138, 255, 0.5);
-  transform: translateY(-1px);
-}
 
-.blog-container > div a:active {
-  color: var(--cg-blue);
-}
-
-.blog-container > div {
+.blog-container > a {
   margin: 30px 0;
   /* padding-left: 50px;
   padding-right: 50px; */
@@ -433,9 +409,10 @@ form {
   height: 350px;
   width: 650px;
   transition: transform(0.2s);
+  text-decoration: none;
 }
 
-.blog-container > div:hover {
+.blog-container > a:hover {
   transform: scale(1.02);
 }
 

@@ -21,7 +21,8 @@ appendBlogs();
 function appendBlogs() {
     blogs.forEach(function (blog) {
         var blogImage = document.createElement("img");
-        var blogPostContainer = document.createElement("div");
+        var blogPostContainer = document.createElement("a");
+        blogPostContainer.href = "./blogs/" + blog.slug + ".html";
         var blogPostContentContainer = document.createElement("div");
         var blogPostDescriptionContainer = document.createElement("div");
         blogPostContentContainer.className = "blog-post-content-container";
@@ -29,19 +30,15 @@ function appendBlogs() {
         var blogHeader = document.createElement("h1");
         var blogDescription = document.createElement("p");
         blogDescription.className = "blog-description";
-        var blogSlug = document.createElement("a");
         blogHeader.innerHTML = blog.title;
         blogDescription.innerHTML = blog.description;
         blogImage.src = blog.image;
         blogImage.alt = blog.imageAlt;
-        blogSlug.href = "./blogs/" + blog.slug + ".html";
-        blogSlug.innerHTML = "Learn More";
         blogPostContentContainer.appendChild(blogHeader);
         blogPostContainer.appendChild(blogImage);
         blogPostDescriptionContainer.appendChild(blogDescription);
         blogPostContentContainer.appendChild(blogPostDescriptionContainer);
         blogPostContainer.appendChild(blogPostContentContainer);
-        blogPostContentContainer.appendChild(blogSlug);
         blogContainer === null || blogContainer === void 0 ? void 0 : blogContainer.append(blogPostContainer);
     });
 }
