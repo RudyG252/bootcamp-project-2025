@@ -65,6 +65,7 @@ function appendBlogs() {
     const blogPostContentContainer = document.createElement("div");
     const blogPostDescriptionContainer = document.createElement("div");
     blogPostContentContainer.className = "blog-post-content-container";
+    blogPostContainer.className = "blog-post-container"
     const blogHeader = document.createElement("h1");
     const blogDescription = document.createElement("p");
     blogDescription.className = "blog-description"
@@ -75,12 +76,12 @@ function appendBlogs() {
     blogImage.alt = blog.imageAlt;
     blogSlug.href = "./blogs/" + blog.slug + ".html";
     blogSlug.innerHTML = "Learn More";
-    blogPostContainer.appendChild(blogHeader);
-    blogPostContentContainer.appendChild(blogImage);
+    blogPostContentContainer.appendChild(blogHeader);
+    blogPostContainer.appendChild(blogImage);
     blogPostDescriptionContainer.appendChild(blogDescription)
     blogPostContentContainer.appendChild(blogPostDescriptionContainer);
     blogPostContainer.appendChild(blogPostContentContainer);
-    blogPostContainer.appendChild(blogSlug);
+    blogPostContentContainer.appendChild(blogSlug);
     blogContainer?.append(blogPostContainer);
   });
 }

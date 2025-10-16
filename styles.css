@@ -392,7 +392,10 @@ form {
   width: 100%;
   gap: 10px;
   justify-items: center;
+  transition: transform(0.2s);
 }
+
+
 
 .blog-container > div a {
   
@@ -407,7 +410,7 @@ form {
   transition: all 0.3s ease;
   padding: 4px 6px;
   border-radius: 6px;
-  margin: 20px 12px;
+  margin-top: 5px;
 }
 
 .blog-container > div a:hover {
@@ -428,12 +431,17 @@ form {
   padding-right: 50px; */
   padding-top: 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; 
   border-radius: 8px;
   background-color: #4b4668;
   height: 350px;
-  width: 600px;
+  width: 650px;
+  transition: transform(0.2s);
+}
+
+.blog-container > div:hover {
+  transform: scale(1.02);
 }
 
 .blog-container h1 {
@@ -441,29 +449,31 @@ form {
   margin-top: 10px;
 }
 
-.blog-post-content-container img {
+.blog-post-container img {
   height: 100%;
   width: 100%;
   margin-left: 20px;
-  max-height: 200px;
-  max-width: 300px;
+  max-height: 300px;
+  max-width: 350px;
   border-radius: 8px;
   border: none;
 }
 
 .blog-post-content-container {
   display: flex;
-  flex-direction: row;
-  justify-content:baseline
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  margin-right: 15px;
 }
 
 .blog-post-content-container > div {
   height: 100%;
   width: 100%;
   max-height: 200px;
+  max-width: 250px;
   overflow-y: auto;
   border-radius: 8px;
-  background-color: #3c355d;
   margin: 0 10px 0 30px;
   padding: 2px;
 }
