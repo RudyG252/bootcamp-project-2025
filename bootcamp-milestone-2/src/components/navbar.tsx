@@ -13,7 +13,7 @@ export default function Navbar() {
         <h1 className={style.logo}>Personal Website</h1>
         <ul className={style.nav_list}>
           <Link href="/">Home</Link>
-          <Link href="/blogs">Blog</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/resume">Resume</Link>
           <Link href="/about">Contact</Link>
