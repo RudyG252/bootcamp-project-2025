@@ -1,3 +1,5 @@
+
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -18,7 +20,7 @@
   /* border: solid red; */
 }
 
-.nav-list {
+.nav_list {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -29,7 +31,7 @@
   /* border: solid blue; */
 }
 
-.nav-list a {
+.nav_list a {
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 2px;
@@ -45,15 +47,16 @@
 
 .navbar h1 {
   color: #c9c6dc;
+  font-family: monospace;
 }
-.nav-list a:hover {
+.nav_list a:hover {
   color: #ffffff;
   background-color: rgba(164, 138, 255, 0.15);
   box-shadow: 0 0 10px rgba(164, 138, 255, 0.5);
   transform: translateY(-1px);
 }
 
-.nav-list a:active {
+.nav_list a:active {
   color: var(--cg-blue);
 }
 

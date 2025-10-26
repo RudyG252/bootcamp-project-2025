@@ -1,4 +1,4 @@
-type Blog = {
+export interface Blog {
   title: string;
   date: string;
   description: string;
@@ -7,7 +7,7 @@ type Blog = {
   slug: string;
 };
 
-export const blogs: Blog[] = [
+const blogs: Blog[] = [
   {
     title: "My Love of Rackets",
     date: "10/16/25",
@@ -18,9 +18,9 @@ export const blogs: Blog[] = [
     `,
     image: "./blogs/images/rackets.jpg",
     imageAlt: "an image of a variety of different rackets",
-    slug: "My_Love_of_Rackets",
+    slug: "My_Love_of_Rackets",  
   },
-  {
+  {   
     title: "My First Blog Entry",
     date: "10/15/25",
     description: `This is just a small entry for my first blog post, in which I will brainstorm and hopefully
@@ -30,3 +30,6 @@ export const blogs: Blog[] = [
     slug: "First_Blog",
   },
 ];
+
+
+export default blogs
