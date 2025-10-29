@@ -1,12 +1,14 @@
+import style from './page.module.css'
+
 export default function Home() {
   return (
     <main>
-      <h1 className="page-title">Rudy's Personal Website</h1>
-      <div className="about">
-        <div className="about-image">
-          <img src="public/pfp.png" alt="A profile picture" />
+      <h1 className={style.page_title}>Rudy's Personal Website</h1>
+      <div className={style.about}>
+        <div className={style.about_image}>
+          <img src="../pfp.png" alt="A profile picture" />
         </div>
-        <div className="about-text">
+        <div className={style.about_text}>
           <p>
             Hey, I'm <strong>Rudy Good</strong>, and i'm a first year
             <br />
@@ -15,7 +17,7 @@ export default function Home() {
           <p>
             <strong>I enjoy:</strong>
           </p>
-          <ul className="about-me-list">
+          <ul className={style.about_me_list}>
             <li>Rock Climbing</li>
             <li>Squash</li>
             <li>Badminton</li>

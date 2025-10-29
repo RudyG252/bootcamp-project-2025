@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #4b4668;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.page_title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+
+}
+
+.about_image img {
+  max-width: 300px;
+  border-radius: 3px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.about_me_list > li {
+  font-size: 15px;
+}
+
+.about_text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about_text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about_text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
