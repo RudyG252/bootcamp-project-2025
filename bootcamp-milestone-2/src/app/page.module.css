@@ -15,9 +15,10 @@
 
 }
 
-.about_image img {
+.about_image {
   max-width: 300px;
-  border-radius: 3px;
+  max-height: 380px;
+  border-radius: 8px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 

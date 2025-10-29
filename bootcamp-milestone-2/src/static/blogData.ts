@@ -22,7 +22,7 @@ const blogs: Blog[] = [
     `,
     image: "/Rackets.jpg",
     imageAlt: "an image of a variety of different rackets",
-    slug: "My_Love_of_Rackets",
+    slug: "blogPages/My_Love_of_Rackets",
   },
   {
     key: uuidv4(),
@@ -30,9 +30,9 @@ const blogs: Blog[] = [
     date: "10/15/25",
     description: `This is just a small entry for my first blog post, in which I will brainstorm and hopefully
      find ideas for future blog posts.`,
-    image: "/brainstorm.jpg",
+    image: "/brainstorm.jpg", 
     imageAlt: "A brain with lighting around it",
-    slug: "First_Blog",
+    slug: "blogPages/First_Blog",
   },
 ];
 

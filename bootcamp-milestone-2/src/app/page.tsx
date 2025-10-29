@@ -1,12 +1,13 @@
 import style from './page.module.css'
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main>
       <h1 className={style.page_title}>Rudy's Personal Website</h1>
       <div className={style.about}>
-        <div className={style.about_image}>
-          <img src="../pfp.png" alt="A profile picture" />
+        <div >
+          <Image className={style.about_image} width={300} height={380} src="/pfp.png" alt="A profile picture"/>
         </div>
         <div className={style.about_text}>
           <p>
