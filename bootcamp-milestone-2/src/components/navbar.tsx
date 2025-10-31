@@ -8,17 +8,15 @@ export default function Navbar() {
     // with your navbar code from your earlier milestones
     // NOTE: we use "class" in HTML but React is quirky so we have to
     // change all the "class" to "className"
-    <header className={style.nav_header}>
-      <nav className={style.navbar}>
-        <h1 className={style.logo}>Personal Website</h1>
-        <ul className={style.nav_list}>
-          <Link href="/">Home</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/resume">Resume</Link>
-          <Link href="/contact">Contact</Link>
-        </ul>
-      </nav>
-    </header>
+    <nav className={style.navbar}>
+      <h1 className={style.logo}>Personal Website</h1>
+      <ul className={style.nav_list}>
+        <Link href="/">Home</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/resume">Resume</Link>
+        <Link href="/contact">Contact</Link>
+      </ul>
+    </nav>
   );
 }
