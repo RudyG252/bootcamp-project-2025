@@ -1,0 +1,44 @@
+.button {
+  background-color: var(--cg-black);
+  border: none;
+  color: var(--cg-white);
+
+  font-family: monospace;
+
+  padding: 5px 7px;
+  text-align: center;
+
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: var(--cg-blue);
+}
+
+.resume {
+  border: 2px solid black;
+  padding: 8px;
+  background-color: #4b4668;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.resume:hover {
+  transform: scale(1.01);
+}
+
+.resume h2 {
+  font-family: Georgia;
+}
+
+.resume a {
+  color: white;
+  background-color: black;
+}
+.resume a:hover {
+  color: grey;
+}
+
+.entry_list > li {
+  margin-top: 10px;
+}
