@@ -1,0 +1,68 @@
+.content_container input[type="text"],
+.content_container input[type="email"],
+.content_container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #5c5780;
+  font-size: 16px;
+  resize: none;
+  background-color: #4b4668;
+  color: #e9e7f5;
+  font-family: sans-serif;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.content_container textarea::placeholder {
+  color: #c9c6dc;
+}
+
+.content_container textarea:focus {
+  border-color: #a48aff;
+  box-shadow: 0 0 10px rgba(164, 138, 255, 0.4);
+  background-color: #4f4a6d;
+}
+
+.content_container form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.submit_button {
+  border-radius: 4px;
+  background-color: #4b4668;
+  color: #e9e7f5;
+  box-shadow: 0 0 6px rgba(164, 138, 255, 0.4);
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  height: 30px;
+  width: 100px;
+}
+
+.submit_button:hover {
+  background-color: #5b4e89;
+  box-shadow: 0 0 12px rgba(164, 138, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+.submit_button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 6px rgba(164, 138, 255, 0.3);
+}
+
+.submit_button:disabled {
+  background-color: #5c5780;
+  color: #c9c6dc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.content_container label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Georgia;
+  font-weight: bold;
+}

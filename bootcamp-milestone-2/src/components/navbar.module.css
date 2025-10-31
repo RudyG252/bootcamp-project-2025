@@ -62,12 +62,6 @@
 
 .logo {
   margin-left: 10px;
-}
-
-.logo a {
-  font-family: Georgia;
-}
-
-.logo a:hover {
-  text-decoration: None;
+  font-size: 26px;
+  font-family: monospace
 }
