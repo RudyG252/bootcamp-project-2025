@@ -26,7 +26,7 @@ export default async function BlogPage() {
     <div className={style.blog_container}>
       {blogs.map((blog) => (
         <BlogPreview
-          key={blog.key}
+          key={blog._id}
           title={blog.title}
           description={blog.description}
           image={blog.image}
