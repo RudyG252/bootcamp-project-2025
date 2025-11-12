@@ -32,7 +32,7 @@ const blogs: Blog[] = [
      find ideas for future blog posts.`,
     image: "/brainstorm.jpg", 
     imageAlt: "A brain with lighting around it",
-    slug: "blogPages/First_Blog",
+    slug: " ",
   },
 ];
 
