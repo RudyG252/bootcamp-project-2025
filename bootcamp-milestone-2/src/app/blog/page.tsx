@@ -20,7 +20,7 @@ export default async function BlogPage() {
   console.log(process.env.MONGO_URI as string)
   const blogs = await getBlogs();
   if (blogs === null) {
-    return <div className={style.blog_container}><p>grahh</p></div>;
+    return <div className={style.blog_container}>No Blogs Yet</div>;
   }
   return (
     <div className={style.blog_container}>
